@@ -1,176 +1,240 @@
 <!DOCTYPE html>
 <html>
-<head><div class="slider">
+<head>
+  <title>Sweet Coin APK Store</title>
 
-  <div class="slides fade">
-    <img src="https://via.placeholder.com/900x300">
-  </div>
+  <style>
 
-  <div class="slides fade">
-    <img src="https://via.placeholder.com/900x300">
-  </div>
-
-  <div class="slides fade">
-    <img src="https://via.placeholder.com/900x300">
-  </div>
-
-</div>
-  <title>Sweet Coin Tech</title>
-
-  <style>.slider{
-  width:90%;
-  margin:auto;
-  overflow:hidden;
-  border-radius:15px;
-}
-
-.slides img{
-  width:100%;
-  border-radius:15px;
-}
-
-.fade{
-  animation:fade 2s;
-}
-
-@keyframes fade{
-  from{opacity:0.4}
-  to{opacity:1}
-}
     body{
-      background:#111;
-      color:white;
-      font-family:Arial;
       margin:0;
-      padding:0;
+      font-family:Arial;
+      background:#121212;
+      color:white;
     }
 
-    header{<
+    header{
       background:#00b894;
-      padding:20px;
-      text-align:center;
-      font-size:30px;
-      font-weight:bold;
+      padding:15px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    header h1{
+      margin:0;
+    }
+
+    .search-box input{
+      padding:10px;
+      width:250px;
+      border:none;
+      border-radius:20px;
+    }
+
+    .slider{
+      width:95%;
+      margin:20px auto;
+      overflow:hidden;
+      border-radius:15px;
+    }
+
+    .slides img{
+      width:100%;
+      border-radius:15px;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .categories{
+      display:flex;
+      gap:15px;
+      overflow:auto;
+      padding:10px 20px;
+    }
+
+    .cat{
+      background:#1f1f1f;
+      padding:10px 20px;
+      border-radius:20px;
+      white-space:nowrap;
     }
 
     .container{
       display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
       gap:20px;
       padding:20px;
     }
 
     .card{
-      background:#222;
+      background:#1e1e1e;
       border-radius:15px;
-      padding:15px;
-      text-align:center;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:scale(1.03);
     }
 
     .card img{
       width:100%;
-      border-radius:10px;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:15px;
     }
 
     .btn{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:10px;
       background:#00b894;
       color:white;
-      padding:10px 20px;
-      border:none;
-      border-radius:8px;
+      font-size:16px;
       cursor:pointer;
-      margin-top:10px;
     }
 
     .btn:hover{
       background:#019875;
     }
+
+    footer{
+      background:#000;
+      text-align:center;
+      padding:20px;
+      margin-top:20px;
+    }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  SWEET COIN TECH
-</header>
-<header>
-  SWEET COIN TECH
+
+  <h1>Sweet Coin APK</h1>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search apps & games">
+  </div>
+
 </header>
 
-<p style="text-align:center;">
-  Contact us on WhatsApp:
-  <a href="https://wa.me/2348161875426">
-    Chat Now
-  </a><div style="text-align:center; margin:20px;">
-  <input type="text" placeholder="Search games/apps..."
-  style="padding:10px; width:60%; border-radius:10px; border:none;">
-  </div><h2 style="text-align:center;">
-</p>
+<div class="slider">
+
+  <div class="slides">
+    <img src="https://via.placeholder.com/900x300">
+  </div>
+
+  <div class="slides">
+    <img src="https://via.placeholder.com/900x300">
+  </div>
+
+  <div class="slides">
+    <img src="https://via.placeholder.com/900x300">
+  </div>
+
+</div>
+
+<div class="categories">
+
+  <div class="cat">Action</div>
+  <div class="cat">Football</div>
+  <div class="cat">Racing</div>
+  <div class="cat">Editing</div>
+  <div class="cat">Tech Apps</div>
+
+</div>
+
 <div class="container">
-<div class="card">
-  <img src="IMAGE LINK">
 
-  <h2>Free Fire</h2>
-
-  <p>Battle royale game.</p>
-
-  <a href="GAME LINK">
-    Download
-  </a>
-</div><h2 style="text-align:center;">Trending Games</h2>
   <div class="card">
-    <img src="https://via.placeholder.com/300x170">
 
-    <h2>Football Game</h2>
+    <img src="https://via.placeholder.com/300x200">
 
-    <p>Best offline football game for Android.</p>
+    <div class="content">
 
-    <a href="https://play.google.com">
-      <button class="btn">Download</button>
-    </a>
+      <h2>Free Fire</h2>
+
+      <p>Battle royale action game.</p>
+
+      <a href="https://play.google.com">
+        <button class="btn">
+          Download APK
+        </button>
+      </a>
+
+    </div>
+
   </div>
 
   <div class="card">
-    <img src="https://via.placeholder.com/300x170">
 
-    <h2>Photo Editor App</h2>
+    <img src="https://via.placeholder.com/300x200">
 
-    <p>Edit photos like a pro.</p>
+    <div class="content">
 
-    <a href="https://play.google.com">
-      <button class="btn">Download</button>
-    </a>
+      <h2>eFootball</h2>
+
+      <p>Real football mobile game.</p>
+
+      <a href="https://play.google.com">
+        <button class="btn">
+          Install Now
+        </button>
+      </a>
+
+    </div>
+
   </div>
 
   <div class="card">
-    <img src="https://via.placeholder.com/300x170">
 
-    <h2>Tech News</h2>
+    <img src="https://via.placeholder.com/300x200">
 
-    <p>Latest gaming and app updates.</p>
+    <div class="content">
 
-    <a href="#">
-      <button class="btn">Read More</button>
-    </a>
+      <h2>Canva</h2>
+
+      <p>Create graphics and designs.</p>
+
+      <a href="https://play.google.com">
+        <button class="btn">
+          Get App
+        </button>
+      </a>
+
+    </div>
+
   </div>
 
-</div><footer style="text-align:center; padding:20px; background:#000;">
-  © 2026 Sweet Coin Tech | All Rights Reserved
+</div>
+
+<footer>
+  © 2026 Sweet Coin APK Store
 </footer>
+
 <script>
+
 let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-  let slides = document.getElementsByClassName("slides");
 
-  for (let i = 0; i < slides.length; i++) {
+  let slides =
+  document.getElementsByClassName("slides");
+
+  for(let i = 0; i < slides.length; i++){
     slides[i].style.display = "none";
   }
 
   slideIndex++;
 
-  if (slideIndex > slides.length) {
+  if(slideIndex > slides.length){
     slideIndex = 1;
   }
 
@@ -178,6 +242,9 @@ function showSlides() {
 
   setTimeout(showSlides, 3000);
 }
+
 </script>
+
 </body>
-</html>https://play.google.com
+</html>      
+    
