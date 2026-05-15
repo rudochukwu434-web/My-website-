@@ -1,4 +1,8 @@
-body {
+body {body {
+  font-family: Arial;
+  background-color: #f5f5f5;
+  color: #222;
+}
   font-family: Arial;
 }
 
