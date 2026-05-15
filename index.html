@@ -55,9 +55,60 @@ header{
 .btn:hover{
   transform:scale(1.08);
 }
-  <style>
+  <style>body{
+  margin:0;
+  font-family:Arial;
+  background:#0f172a;
+  color:white;
+}
 
-    body{
+header{
+  background:#1e293b;
+  text-align:center;
+  padding:20px;
+}
+
+.apps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  padding:20px;
+}
+
+.card{
+  background:#1e293b;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+.card img{
+  width:100%;
+}
+
+.card h2{
+  padding:10px;
+}
+
+.btn{
+  display:block;
+  background:#22c55e;
+  color:white;
+  text-align:center;
+  padding:10px;
+  text-decoration:none;
+  margin:10px;
+  border-radius:10px;
+}
+
+    body{<header>
+  <h1>Sweet Coin APK Store</h1>
+  <p>Download Apps, Games & Tech Tools</p>
+</header>
       margin:0;
       font-family:Arial;
       background:#121212;
@@ -299,4 +350,24 @@ function showSlides() {
 
 </body>
 </html>      
-    
+    <section class="apps">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200.png?text=Free+Fire">
+<h2>Free Fire</h2>
+<a class="btn" href="#">Download APK</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200.png?text=TikTok">
+<h2>TikTok</h2>
+<a class="btn" href="#">Download APK</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200.png?text=WhatsApp">
+<h2>WhatsApp</h2>
+<a class="btn" href="#">Download APK</a>
+</div>
+
+    </section>
