@@ -2,7 +2,59 @@
 <html>
 <head>
   <title>Sweet Coin APK Store</title>
+.card{
+  animation:fadeUp 1s ease;
+}
 
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(30px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+header{
+  animation:slideDown 1s ease;
+}
+
+@keyframes slideDown{
+  from{
+    transform:translateY(-100%);
+  }
+
+  to{
+    transform:translateY(0);
+  }
+}
+
+.slider{
+  animation:zoomIn 2s ease;
+}
+
+@keyframes zoomIn{
+  from{
+    transform:scale(0.9);
+    opacity:0;
+  }
+
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+.btn{
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.08);
+}
   <style>
 
     body{
