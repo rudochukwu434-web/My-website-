@@ -1,9 +1,42 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><div class="slider">
+
+  <div class="slides fade">
+    <img src="https://via.placeholder.com/900x300">
+  </div>
+
+  <div class="slides fade">
+    <img src="https://via.placeholder.com/900x300">
+  </div>
+
+  <div class="slides fade">
+    <img src="https://via.placeholder.com/900x300">
+  </div>
+
+</div>
   <title>Sweet Coin Tech</title>
 
-  <style>
+  <style>.slider{
+  width:90%;
+  margin:auto;
+  overflow:hidden;
+  border-radius:15px;
+}
+
+.slides img{
+  width:100%;
+  border-radius:15px;
+}
+
+.fade{
+  animation:fade 2s;
+}
+
+@keyframes fade{
+  from{opacity:0.4}
+  to{opacity:1}
+}
     body{
       background:#111;
       color:white;
@@ -124,6 +157,27 @@
 </div><footer style="text-align:center; padding:20px; background:#000;">
   © 2026 Sweet Coin Tech | All Rights Reserved
 </footer>
+<script>
+let slideIndex = 0;
+showSlides();
 
+function showSlides() {
+  let slides = document.getElementsByClassName("slides");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  slides[slideIndex-1].style.display = "block";
+
+  setTimeout(showSlides, 3000);
+}
+</script>
 </body>
 </html>https://play.google.com
