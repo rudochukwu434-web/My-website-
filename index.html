@@ -1,79 +1,105 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sweet Coin Fashion</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Sweet Coin Tech</title>
+
+  <style>
+    body{
+      background:#111;
+      color:white;
+      font-family:Arial;
+      margin:0;
+      padding:0;
+    }
+
+    header{
+      background:#00b894;
+      padding:20px;
+      text-align:center;
+      font-size:30px;
+      font-weight:bold;
+    }
+
+    .container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      padding:20px;
+    }
+
+    .card{
+      background:#222;
+      border-radius:15px;
+      padding:15px;
+      text-align:center;
+    }
+
+    .card img{
+      width:100%;
+      border-radius:10px;
+    }
+
+    .btn{
+      background:#00b894;
+      color:white;
+      padding:10px 20px;
+      border:none;
+      border-radius:8px;
+      cursor:pointer;
+      margin-top:10px;
+    }
+
+    .btn:hover{
+      background:#019875;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <h1>Sweet Coin Fashion</h1>
-    <p>Modern Streetwear & Clothing Designs</p>
+<header>
+  SWEET COIN TECH
+</header>
 
-    <a href="#shop" class="btn">Shop Now</a>
-  </header>
+<div class="container">
 
-  <!-- PROFILE -->
-  <section class="profile">
-    <img src="myphoto.jpg" alt="Profile">
-    <h2>Raphael Udochukwu</h2>
-    <p>Fashion Designer</p>
-  </section>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x170">
 
-  <!-- SHOP SECTION -->
-  <section <section id="shop" class="shop">
+    <h2>Football Game</h2>
 
-  <h2>Our Collection</h2>
+    <p>Best offline football game for Android.</p>
 
-  <div class="grid">
-
-    <div class="product">
-      <img src="tshirt.jpg" alt="T-shirt">
-      <h3>T-shirt</h3>
-      <p>$10</p>
-      <button>Buy Now</button>
-    </div>
-
-    <div class="product">
-      <img src="hoodie.jpg" alt="Hoodie">
-      <h3>Hoodie</h3>
-      <p>$20</p>
-      <button>Buy Now</button>
-    </div>
-
-    <div class="product">
-      <img src="jeans.jpg" alt="Jeans">
-      <h3>Jeans</h3>
-      <p>$25</p>
-      <button>Buy Now</button>
-    </div>
-
-    <div class="product">
-      <img src="cap.jpg" alt="Cap">
-      <h3>Cap</h3>
-      <p>$8</p>
-      <button>Buy Now</button>
-    </div>
-
+    <a href="https://play.google.com">
+      <button class="btn">Download</button>
+    </a>
   </div>
 
-</section>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x170">
 
-    <h2>Our Collection</h2>
+    <h2>Photo Editor App</h2>
 
-    <div class="product">
-      <img src="tshirt.jpg" alt="T-shirt">
-      <h3>T-shirt</h3>
-      <p>$10</p>
-     a{<a href="https://wa.me/2348161875426?text=I%20want%20to%20order%20T-shirt%20($10)" target="_blank">
-  <button>Buy Now</button>
-</a> <button>Buy Now</button>
-    </div>
+    <p>Edit photos like a pro.</p>
 
-  </section>
+    <a href="https://play.google.com">
+      <button class="btn">Download</button>
+    </a>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/300x170">
+
+    <h2>Tech News</h2>
+
+    <p>Latest gaming and app updates.</p>
+
+    <a href="#">
+      <button class="btn">Read More</button>
+    </a>
+  </div>
+
+</div>
 
 </body>
 </html>
-    
