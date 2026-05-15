@@ -1,70 +1,124 @@
 <!DOCTYPE html>
-<html><a href="https://rudochukwu434-web.github.io/My--website-1" target="_blank">My Website</a>
+<html>
 <head>
-<h1>Clothing Designs</h1>
+  <title>Clothing Designs</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
 
-<style>
-body {
-  background-color: #f4f4f4;
-  text-align: center;
-  font-family: Arial;
-  margin: 0;
-}
+    /* Header */
+    .header {
+      background-color: black;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 30px;
-}
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background-color: white;
+    }
 
-.section {
-  padding: 20px;
-}
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
 
-.card {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  width: 80%;
-  border-radius: 10px;
-}
+    .hero p {
+      color: gray;
+      font-size: 18px;
+    }
 
-button {
-  background: blue;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-</style>
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: green;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
 
+    /* Products */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 
-<body><a href="https://rudochukwu434-web.github.io/My--website-1" 
-   style="display:inline-block; padding:12px 25px; background-color:green; color:white; text-decoration:none; border-radius:8px; font-size:16px;">
-   Shop Now
-</a>
+<body>
 
-<header>
-<h1<h1>welcome to Clothing Designs</h1>
-<p>This is my clothing brand website.</p>
-</header>
-
-<div class="section">
-  <div class="card">
-    <h1>Raphael Udochukwu</h1>
-    <p>Web Developer</p>
-
-    <h2>About Me</h2>
-    <p>I am learning web development and building my skills step by step.</p>
-
-    <h2>My Skills</h2>
-    <p>HTML, CSS, JavaScript</p>
-
-    <h2>Contact Me</h2>
-    <button>Message Me</button>
+  <div class="header">
+    Clothing Designs
   </div>
-</div>
+
+  <div class="hero">
+    <h1>Welcome to My Fashion Store</h1>
+    <p>Trendy clothes made for your style</p>
+    <a class="btn" href="https://rudochukwu434-web.github.io/My--website-1">Shop Now</a>
+  </div>
+
+  <div class="products">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200">
+      <h3>T-Shirt</h3>
+      <p class="price">$10</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200">
+      <h3>Hoodie</h3>
+      <p class="price">$25</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/200">
+      <h3>Jeans</h3>
+      <p class="price">$30</p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 Clothing Designs
+  </div>
 
 </body>
 </html>
