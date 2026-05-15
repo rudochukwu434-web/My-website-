@@ -1,20 +1,64 @@
-body {body {
+body {
   font-family: Arial;
-  background-color: #f5f5f5;
+  margin: 0;
+  background: #f5f5f5;
   color: #222;
 }
-  font-family: Arial;
+
+/* HEADER */
+.header {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
 }
 
-.product {
-  border: 1px solid #ddd;
-  padding: 10px;
-  width: 200px;
+.header .btn {
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* PROFILE */
+.profile {
   text-align: center;
-  border-radius: 10px;
-profile}
+  padding: 30px;
+}
+
 .profile img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+}
+
+/* SHOP */
+.shop {
+  padding: 20px;
+  text-align: center;
+}
+
+.product {
+  background: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product button {
+  background: black;
+  color: white;
+  padding: 8px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
 }
