@@ -1,24 +1,128 @@
-<!-- <header class="header">
-  <h1>Sweet Coin APK Store</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sweet Coin APK Store</title>
 
-  <!-- SEARCH BAR -->
-  <div class="search-box">
-    <input type="text" placeholder="Search apps and games...">
-    <button>Search</button>
-  </div>
-</header>    <!-- ADS SECTION -->
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f4f4;
+}
 
+/* HEADER */
+header{
+  background:#00b894;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+/* SEARCH */
+.search-box{
+  margin-top:10px;
+}
+
+.search-box input{
+  padding:10px;
+  width:70%;
+  border:none;
+  border-radius:20px;
+}
+
+.search-box button{
+  padding:10px;
+  border:none;
+  border-radius:20px;
+  background:#333;
+  color:white;
+  cursor:pointer;
+}
+
+/* SECTIONS */
+.features{
+  padding:20px;
+}
+
+h2{
+  text-align:center;
+}
+
+/* GRID */
+.apps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  gap:15px;
+}
+
+/* CARDS */
+.card{
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.card img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* BUTTON */
+.btn{
+  display:block;
+  margin-top:10px;
+  padding:10px;
+  background:#00b894;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+}
+
+.btn:hover{
+  background:#019875;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:15px;
+  background:#333;
+  color:white;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<h1>Sweet Coin APK Store</h1>
+<p>Download Apps & Games Easily</p>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search apps and games...">
+<button onclick="searchApps()">Search</button>
+</div>
+</header>
+
+<!-- ADS SECTION -->
 <section class="features">
 <h2>Sponsored Ads</h2>
 
-<div class="feature-grid">
+<div class="apps">
 
-<div class="feature-box">
+<div class="card">
 <h3>Google AdSense</h3>
 <p>Your ads will appear here when approved.</p>
 </div>
 
-<div class="feature-box">
+<div class="card">
 <h3>Sponsored Post</h3>
 <p>Promote your app or business here.</p>
 </div>
@@ -26,8 +130,36 @@
 </div>
 </section>
 
-<!-- AFFILIATE PRODUCTS -->
+<!-- APPS DOWNLOAD SECTION -->
+<section class="features">
+<h2>Download Apps & Games</h2>
 
+<div class="apps" id="appList">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200.png?text=Drift+Racing">
+<h3>Drift Racing</h3>
+<p>Best drifting game</p>
+
+<a class="btn" href="drift.apk" download>
+Download APK
+</a>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x200.png?text=Photo+Editor">
+<h3>Photo Editor</h3>
+<p>Edit photos like a pro</p>
+
+<a class="btn" href="photo.apk" download>
+Download APK
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- AFFILIATE -->
 <section class="features">
 <h2>Affiliate Products</h2>
 
@@ -55,7 +187,6 @@
 </section>
 
 <!-- YOUR PRODUCTS -->
-
 <section class="features">
 <h2>Sweet Coin Products</h2>
 
@@ -65,7 +196,7 @@
 <img src="https://via.placeholder.com/300x200.png?text=Sweet+Coin+Hoodie">
 <h2>Sweet Coin Hoodie</h2>
 <a class="btn" href="https://wa.me/2348161875426">
-Order On WhatsApp
+Order on WhatsApp
 </a>
 </div>
 
@@ -73,7 +204,7 @@ Order On WhatsApp
 <img src="https://via.placeholder.com/300x200.png?text=Gaming+T-Shirt">
 <h2>Gaming T-Shirt</h2>
 <a class="btn" href="https://wa.me/2348161875426">
-Order On WhatsApp
+Order on WhatsApp
 </a>
 </div>
 
@@ -81,36 +212,43 @@ Order On WhatsApp
 </section>
 
 <!-- NEWSLETTER -->
-
 <section class="features">
 <h2>Join Our Community</h2>
 
-<div class="feature-box">
+<div class="card">
 
 <p>Get latest apps and games updates.</p>
 
-<br>
-
-<input type="email"
-placeholder="Enter your email"
-style="
-padding:14px;
-width:80%;
-max-width:400px;
-border:none;
-border-radius:30px;
-">
+<input type="email" placeholder="Enter your email"
+style="padding:12px;width:80%;border-radius:20px;border:none;">
 
 <br><br>
 
-<button class="btn">
-Subscribe
-</button>
+<button class="btn">Subscribe</button>
 
 </div>
 </section>
 
 <footer>
 © 2026 Sweet Coin APK Store
-</footer>        
- -->
+</footer>
+
+<!-- SEARCH SCRIPT -->
+<script>
+function searchApps(){
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let cards = document.querySelectorAll("#appList .card");
+
+  cards.forEach(card => {
+    let title = card.querySelector("h3").innerText.toLowerCase();
+    if(title.includes(input)){
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
