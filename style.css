@@ -1,69 +1,35 @@
-body {
-  font-family: Arial;
-  margin: 0;
-  background: #f5f5f5;
-  color: #222;
+  <style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#f5f5f5;
 }
 
 /* HEADER */
-.header {
-  background: black;
-  color: white;
-  text-align: center;
-  padding: 60px 20px;
+.header{
+  background:#111;
+  color:white;
+  padding:20px;
+  text-align:center;
 }
 
-.header .btn {
-  background: white;
-  color: black;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+/* SEARCH BAR */
+.search-box{
+  margin-top:15px;
 }
 
-/* PROFILE */
-.profile {
-  text-align: center;
-  padding: 30px;
+.search-box input{
+  width:70%;
+  padding:10px;
+  border:none;
+  border-radius:5px;
 }
 
-.profile img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+.search-box button{
+  padding:10px 15px;
+  border:none;
+  background:#00bfff;
+  color:white;
+  border-radius:5px;
 }
-
-/* SHOP */
-.shop {
-  padding: 20px;
-  text-align: center;
-glid(.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
-  padding: 20px;
-}
-
-.product {
-  background: white;
-  display: inline-block;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 10px;
-  width: 200px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.product img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.product button {
-  background: black;
-  color: white;
-  padding: 8px;
-  border: none;
-  width: 100%;
-  cursor: pointer;
-}
+</style>
